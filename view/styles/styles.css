@@ -1,0 +1,125 @@
+/* CSS Document */
+
+/* ====================================== */ 
+/* ===== Základní rozložení stránky ===== */ 
+/* ====================================== */ 
+
+body 
+  {
+   background-color: green;
+   text-align: center;
+   font-family: sans-serif;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   min-width: 770px;
+  }
+
+.vycentrovat
+  {
+   margin: auto;  /* vycentrování */  
+   height: 100%;
+   position: relative;
+  }
+
+.zahlavi
+  {
+   font-size: 150%;
+   position: absolute;
+   top: 10px;
+   overflow: hidden;
+   height: auto;
+   width: 100%;
+  }
+  
+.leve_menu 
+  {
+   box-sizing: border-box; 
+   text-overflow: clip;
+   word-wrap: break-word;
+   font-size: 120%;
+   max-width: 13vw;
+   position: absolute;
+   top: 120px;
+   left: 10px;
+   width: 150px;
+   height: calc(100% - 120px);
+   padding: 30px 0;
+   overflow: hidden;
+   overflow-y: visible;
+  }
+
+.obsah
+  {
+   overflow-x: hidden;
+   position: absolute;
+   top: 120px;
+   left: 170px;
+   width: calc(100% - 170px);
+   height:  calc(100% - 180px);
+   min-height: 70%;
+   padding: 30px 0;
+   overflow: hidden;
+   overflow-y: visible; 
+  }
+
+.login 
+  {
+   overflow-x: hidden;
+   position: absolute;
+   top: 120px;
+   left: 0;
+   width: 100%;
+   height:  calc(100% - 180px);
+   min-height: 70%;
+   padding: 30px 0;
+   overflow: hidden;
+   overflow-y: visible; 
+  }   
+
+
+/* ====================================== */ 
+/* ===== Tlačítka ======================= */ 
+/* ====================================== */ 
+
+/* ----------- tlačítko (odkaz) ----------- */   
+           
+a.button 
+  {padding: .5em;
+   background: darkgreen; 
+   border: 1px solid darkgreen; 
+   color: #fff; 
+   cursor: default; 
+   text-decoration: none; 
+   border-radius: 5px;
+   position: relative;
+   top: 10px;
+  }
+a.button:hover {background: green}
+a.button:active {position: relative; top: 11px; left: 1px}
+
+/* ----------- položky menu ----------- */   
+#menu
+  {
+   display: block;
+   font-weight: bold;
+   margin-top: 1vh;
+   margin-bottom: 1vh;
+   padding: 1vh 5px 1vh 5px;
+   cursor: pointer;
+  }
+
+/* ============================================ */ 
+/* = ODMAZÁNÍ OBSAHU VLOŽENÉHO POSKYTOVATELEM = */ 
+/* ============================================ */ 
+
+.souhrn,
+.trop,
+.eq
+  {
+   display: none;
+  }
+ 
